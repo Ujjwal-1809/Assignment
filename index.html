@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .box {
+            height: 280px;
+            width: 250px;
+            border-radius: 2px;
+            box-shadow: 0px 0px 20px 0px rgb(62, 62, 62);
+            transition: transform 1s ease;
+        }
+
+        @keyframes rotateOnce {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        .box:hover {
+            animation: rotateOnce 1s ease forwards;
+        }
+
+        .icons {
+            height: 90px;
+            width: 90px;
+            border-radius: 100%;
+            position: relative;
+            border: 4px solid rgb(19, 19, 92);
+            bottom: 320px;
+            left: 78px;
+        }
+
+        .icon1 {
+            background-image: url("./images/emergency.jpeg");
+            background-size: cover;
+        }
+
+        .icon2 {
+            background-image: url("./images/drain.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .icon3 {
+            background-image: url("./images/DROP.jpeg");
+            background-size: contain;
+        }
+
+        .icon4 {
+            background-image: url("./images/Fire.png");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="assignment"
+        class="h-screen grid grid-rows-[25%,75%] grid-cols-4 bg-[linear-gradient(154deg,rgb(19,19,92)_50%,rgb(250,244,244)_50%)] ">
+
+        <h1
+            class=" mt-[20px] text-4xl font-normal text-white ml-[70px] font-Oswald, sans-serif not-italic [font-optical-sizing:auto] row-start-1 row-end-2 col-start-1 col-end-5">
+            OUR SERVICES</h1>
+
+        <div class="items justify-self-end">
+            <div id="box1" class="bg-white box pt-[50px] text-center"><span
+                    class="font-bold text-xl text-[rgb(63,63,63)]">Emergency Plumbing <br>Services </span><br> <span
+                    class="text-gray-500 text-sm font-medium">Our plumbers are ready to go <br>24/7 for emergencies-
+                    including <br>nights, weekends and holidays.</span> <br><br>
+                <h1 class="text-xl text-[rgb(19,19,92)]">EXPLORE THIS SERVICE &nbsp; <span class="text-sm"><i
+                            class="fa-solid fa-greater-than relative bottom-[2px]"></i></span></h1>
+            </div>
+            <div class="icons icon1">
+
+            </div>
+        </div>
+
+        <div class="items justify-self-center ml-[23px]">
+            <div id="box2" class="bg-white box pt-[50px] text-center"><span
+                    class="font-bold text-xl text-[rgb(63,63,63)]">Plumbing and Drains</span><br> <span
+                    class="text-gray-500 text-sm font-medium">As the largest plumbing and drain <br>service company we
+                    make <br>thousands of repairs everyday.</span> <br><br>
+                <h1 class="text-xl text-[rgb(19,19,92)]">EXPLORE THIS SERVICE &nbsp; <span class="text-sm"><i
+                            class="fa-solid fa-greater-than relative bottom-[2px]"></i></span></h1>
+            </div>
+            <div class="icons icon2"></div>
+        </div>
+
+        <div class="items ml-[27px] ">
+            <div id="box3" class="bg-white box pt-[50px] text-center"><span
+                    class="font-bold text-xl text-[rgb(63,63,63)]">Water Damage</span><br> <span
+                    class="text-gray-500 text-sm font-medium">Our teams are equipped with <br>state-of-the-art water
+                    extraction <br> and cleanup equipment.</span><br><br>
+                <h1 class="text-xl text-[rgb(19,19,92)]">EXPLORE THIS SERVICE &nbsp; <span class="text-sm"><i
+                            class="fa-solid fa-greater-than relative bottom-[2px]"></i></span></h1>
+            </div>
+            <div class="icons icon3"></div>
+        </div>
+
+        <div class="items">
+            <div id="box4" class="bg-white box pt-[50px] text-center"><span
+                    class="font-bold text-xl text-[rgb(63,63,63)]">Water Heaters</span><br> <span
+                    class="text-gray-500 text-sm font-medium">Trust Roto-Rooter for repair and <br> replacement of gas,
+                    electric and <br>tankless water heaters.</span><br><br>
+                <h1 class="text-xl text-[rgb(19,19,92)]">EXPLORE THIS SERVICE &nbsp; <span class="text-sm"><i
+                            class="fa-solid fa-greater-than relative bottom-[2px]"></i></span></h1>
+            </div>
+            <div class="icons icon4"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
